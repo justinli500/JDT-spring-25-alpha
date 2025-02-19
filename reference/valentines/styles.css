@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fa;
+    /* aliceblue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: "Emilys Candy";
+    color: #7a0811;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 340px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card img {
+    height: 300px;
+    width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+    width: 50%;
+    padding: 4px;
+    border: 1px solid #7a0811;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.1s;
+    width: 150px;
+  }
+
+  button:hover {
+    color: white;
+  }
+  
+  #yes {
+    background-color: lightgreen;
+  }
+
+  #no {
+    background-color: lightcoral;
+  }
+
+  /* * Pseudoclass */
+    #yes:hover {
+      transform: scale(2);
+      transition: transform 0.5s;
+    }
+
+    #no:hover {
+      transform: scale(0.3);
+      transition: transform 0.5s;
+    }
+
+    .shake {
+      animation: shake(0.5);
+    }
+
+    /* * Query */
+    @keyframes shake {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      25% {
+        transform: translate(5px, -5px);
+      }
+
+      50% {
+        transform: translate(-5px, 5px);
+      }
+
+      75% {
+        transform: translate(5px, 5px);
+      }
+
+      100% {
+        transform: translate(-5px, -5px);
+      }
+    }
+  
+  .button-container {
+    display: flex;
+    /* * Space around gives equal spacing between elements */
+    justify-content: space-around;
+    /* * Specifies the gap between the images */
+    gap: 20px;
+
+  }
+
+  span {
+    color:red;
+  }
+
+  #birds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
